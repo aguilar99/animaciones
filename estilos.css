@@ -1,0 +1,38 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: #A8FF33;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 2em;
+}
+
+.nums{
+text-indent: 5em;
+}
+
+#num1{
+  animation-name: cambiaColor;
+  animation-duration: 6s;
+}
+
+#num2{
+    position: relative;
+    animation-name: movimiento;
+    animation-duration: 4s;
+}
+
+@keyframes cambiaColor {
+    from {background-color: rgb(128, 0, 79);}
+    to {background-color: rgb(0, 238, 255);}
+}
+
+@keyframes movimiento {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
